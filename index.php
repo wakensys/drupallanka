@@ -21,6 +21,9 @@ drupal_bootstrap(DRUPAL_BOOTSTRAP_FULL);
 menu_execute_active_handler();
 
 
+<<<<<<< HEAD
+//dudmfsif sdfk
+=======
 // new codes
 
 if ($_REQUEST['id']) {
@@ -37,3 +40,4 @@ if (!$id) {
 	$rs['servicetime']="30";
 }
 ?>
+>>>>>>> fb75243946f1c6412631267d1da97ed1a28ea7a6

@@ -19,3 +19,21 @@ define('DRUPAL_ROOT', getcwd());
 require_once DRUPAL_ROOT . '/includes/bootstrap.inc';
 drupal_bootstrap(DRUPAL_BOOTSTRAP_FULL);
 menu_execute_active_handler();
+
+
+// new codes
+
+if ($_REQUEST['id']) {
+	$id=safe($_REQUEST['id']);
+	$varmi = getSqlNumber("SELECT id FROM rests WHERE id=".$id."");
+	if ($varmi==0) {
+		echo "<script>document.location.href='rests.php'</script>";
+		exit;
+	}
+	$rs=getSqlRow("SELECT * FROM rests WHERE id=".$id."");
+	$rsd=getSqlRow("select * from delivery_areas where id=".$rs['da_id']."");
+}
+if (!$id) {
+	$rs['servicetime']="30";
+}
+?>

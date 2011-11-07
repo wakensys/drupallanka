@@ -23,7 +23,16 @@ menu_execute_active_handler();
 
 <<<<<<< HEAD
 //dudmfsif sdfk
-=======
+=======+
+
+SELECT id FROM rests WHERE id
+
+SELECT id FROM rests WHERE id
+SELECT id FROM rests WHERE id
+
+
+
+SELECT id FROM rests WHERE idSELECT id FROM rests WHERE idSELECT id FROM rests WHERE id
 // new codes
 
 if ($_REQUEST['id']) {
